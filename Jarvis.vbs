@@ -4,8 +4,8 @@ set wshshell = wscript.CreateObject("wscript.shell")
 dim Input
 
 wshshell.run "%windir%\Speech\Common\sapisvr.exe -SpeechUX"
-Sapi.speak "Please speak Tony Sir, or type, what you want to open?"
-Input=inputbox ("Please speak Tony Sir, or type, what you want to open.")
+Sapi.speak "Please speak Tony Sir, or type, what you want?"
+Input=inputbox ("Please speak Tony Sir, or type, what you want")
 
 
 if Input = "Tony Life" OR Input = "Tony Life"then
@@ -37,7 +37,7 @@ if Input = "" then
 else
 
 
-Sapi.speak "I don't recognize Sir your input Thanos is Dead, Please try something else"
+Sapi.speak "I don't recognize Sir your input Thanos is Dead"
 end if
 end if
 end if
